@@ -18,7 +18,7 @@ st.set_page_config(
     layout="wide",
 )
 
-DB_PATH = os.environ.get("DB_PATH", "/content/quotes.db")
+DB_PATH = Path("/tmp/ai_smart_followup.db")
 DATE_FMT = "%Y-%m-%d %H:%M:%S"
 STATUSES = ["Sent", "Replied", "Won", "Lost"]
 CHANNELS = ["Email", "Phone", "Zalo", "Other"]
